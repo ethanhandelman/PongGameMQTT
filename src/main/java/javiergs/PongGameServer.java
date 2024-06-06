@@ -45,7 +45,7 @@ public class PongGameServer extends JFrame {
 		pongGame.setVisible(true);
 	}
 	
-	private void connect () throws IOException {
+	private void connect() throws IOException {
 		PongBrain.getInstance().setWhoAmI(PongBrain.SERVER);
 		Server server = new Server();
 		if (server.isReady()) {
